@@ -4,8 +4,15 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import VueLazyLoader from 'vue-lazyload';
-require('./assets/css/normalize.css');
+import FastClick from 'fastclick';
 
+Vue.prototype.$http = axios 
+require('./assets/css/normalize.css');
+if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function () {
+        FastClick.attach(document.body)
+    }, false);
+}
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
