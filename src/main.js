@@ -6,8 +6,9 @@ import router from './router';
 import VueLazyLoader from 'vue-lazyload';
 import FastClick from 'fastclick';
 
-Vue.prototype.$http = axios 
+// Vue.prototype.$http = axios;
 require('./assets/css/normalize.css');
+
 if ('addEventListener' in document) {
     document.addEventListener('DOMContentLoaded', function () {
         FastClick.attach(document.body)
