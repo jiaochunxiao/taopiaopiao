@@ -17,6 +17,7 @@ if ('addEventListener' in document) {
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
+
 Vue.use(VueLazyLoader, {
     error: '',
     loading: require('./assets/images/default.svg')

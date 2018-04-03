@@ -18,6 +18,8 @@
     import SliderBanner from '../components/banner-slider';
     import ScrollLoading from '../components/scroll-loading';
 
+    import { getCityList } from '../api/home';
+
     export default {
         data() {
             return {
@@ -27,6 +29,9 @@
         components: {
             SliderBanner,
             ScrollLoading
+        },
+        mounted() {
+            getCityList('/movie/city');
         },
         methods: {
             infiniteFun($state) {
