@@ -17,8 +17,7 @@
 <script>
     import SliderBanner from '../components/banner-slider';
     import ScrollLoading from '../components/scroll-loading';
-
-    import { getCityList } from '../api/home';
+    import { mapState } from 'vuex';
 
     export default {
         data() {
@@ -31,7 +30,7 @@
             ScrollLoading
         },
         mounted() {
-            getCityList('/movie/city');
+            this.$store.dispatch('getCityList');
         },
         methods: {
             infiniteFun($state) {
@@ -48,6 +47,11 @@
                     }
                 }, 1000);
             }
+        },
+        computed: {
+            ...mapState([
+                'cityList'
+            ])
         }
     };
 

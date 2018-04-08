@@ -5,6 +5,7 @@ import App from './App';
 import router from './router';
 import VueLazyLoader from 'vue-lazyload';
 import FastClick from 'fastclick';
+import store from './store';
 
 // Vue.prototype.$http = axios;
 require('./assets/css/normalize.css');
@@ -33,13 +34,14 @@ router.afterEach(route => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 })
-// new Vue({
-//     el: '#app',
-//     router,
-//     components: { App },
-//     template: '<App/>'
-// });
 new Vue({
+    el: '#app',
     router,
-    render: h => h(App)
-}).$mount('#app');
+    store,
+    components: { App },
+    template: '<App/>'
+});
+// new Vue({
+//     router,
+//     render: h => h(App)
+// }).$mount('#app');
