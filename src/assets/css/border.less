@@ -1,28 +1,26 @@
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5){
-    .border-1px(@color){
+    .border-1px{
         &::after{
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            border: 1px solid @color;
+            border: 1px solid #d9d9d9;
             box-sizing: border-box;
             width: 200%;
-            height: 200%;
             transform: scale(0.7);
             transform-origin: left top;
         }
     }
-    .border-1px-bottom(@color) {
+    .border-1px-bottom {
         &::after{
             content: '';
             position: absolute;
-            top: 0;
+            bottom: 0;
             left: 0;
-            border-bottom: 1px solid @color;
-            box-sizing: border-box;
             width: 200%;
-            height: 200%;
+            border-bottom: 1px solid #d9d9d9;
+            box-sizing: border-box;
             transform: scale(0.7);
             transform-origin: left top;
         }
@@ -30,13 +28,13 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2){
-    .border-1px(@color){
+    .border-1px{
         &::after{
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            border: 1px solid @color;
+            border: 1px solid #d9d9d9;
             box-sizing: border-box;
             width: 200%;
             height: 200%;
@@ -44,16 +42,15 @@
             transform-origin: left top;
         }
     }
-    .border-1px-bottom(@color) {
+    .border-1px-bottom {
         &::after{
             content: '';
             position: absolute;
-            top: 0;
+            bottom: 0;
             left: 0;
-            border-bottom: 1px solid @color;
-            box-sizing: border-box;
             width: 200%;
-            height: 200%;
+            border-bottom: 1px solid #d9d9d9;
+            box-sizing: border-box;
             transform: scale(0.5);
             transform-origin: left top;
         }
