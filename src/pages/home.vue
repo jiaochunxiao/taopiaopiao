@@ -76,11 +76,6 @@
                 this.moveLeft = flag ? '5%' : '55%';
                 this.isShow = !this.isShow;
             }
-        },
-        computed: {
-            // ...mapState([
-            //     'cityList'
-            // ])
         }
     };
 
