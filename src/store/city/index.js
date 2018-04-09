@@ -2,7 +2,10 @@ import mutations from './mutations';
 import actions from './actions';
 const city = {
     state: {
-        cityList: []
+        cityList: [],
+        name: '北京',
+        show: false,
+        rN: 'bj',
     },
     mutations,
     actions
