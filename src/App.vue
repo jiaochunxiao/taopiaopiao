@@ -1,12 +1,24 @@
 <template>
     <div id="app">
-        <router-view/>
+        <div class="tpp-content">
+            <router-view/>
+        </div>
+        <footer-nav :showNav="showNav"></footer-nav>
     </div>
 </template>
 
 <script>
+import footerNav from '@/components/footer-nav';
 export default {
-    name: 'App'
+    name: 'App',
+    data() {
+        return {
+            showNav: true
+        }
+    },
+    components: {
+        footerNav
+    }
 }
 </script>
 
