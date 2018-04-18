@@ -1,6 +1,6 @@
 <template>
-    <div class="page-cinema">
-        <h1>cinema</h1>
+    <div>
+        <h1>me</h1>
     </div>
 </template>
 
