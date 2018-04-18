@@ -9,14 +9,22 @@ export default new Router({
             path: '/',
             name: 'home',
             component: () => import('@/pages/home')
+        }, {
+            path: '/cinema',
+            name: 'cinema',
+            component: () => import('@/pages/cinema')
+        }, {
+            path: '/me',
+            name: 'me',
+            component: () => import('@/pages/me')
         }
     ],
-    scrollBehavior (to, from, savedPosition) {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve({ x: 0, y: 0 })
-            }, 500)
-        })
-     }
+    // scrollBehavior (to, from, savedPosition) {
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             resolve({ x: 0, y: 0 })
+    //         }, 500)
+    //     })
+    //  }
 });
 

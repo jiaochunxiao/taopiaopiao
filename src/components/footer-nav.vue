@@ -1,7 +1,7 @@
 <template>
     <div class="footer-nav">
         <div class="footer-nav-content">
-            <div class="footer-nav-content-item" :class="{'nav-active': route === '/'}">
+            <nav class="footer-nav-content-item" :class="{'nav-active': route === '/'}">
                 <router-link to="/">
                     <div class="nav-icon">
                         <img v-show="route !== '/'" src="../assets/images/hno.svg" alt="">
@@ -9,8 +9,8 @@
                     </div>
                     <div class="nav-text">热映</div>
                 </router-link>
-            </div>
-            <div class="footer-nav-content-item" :class="{'nav-active': route === '/cinema'}">
+            </nav>
+            <nav class="footer-nav-content-item" :class="{'nav-active': route === '/cinema'}">
                 <router-link to="cinema">
                     <div class="nav-icon">
                         <img v-show="route !== '/cinema'" src="../assets/images/mno.svg" alt="">
@@ -18,8 +18,8 @@
                     </div>
                     <div class="nav-text">影院</div>
                 </router-link>
-            </div>
-            <div class="footer-nav-content-item" :class="{'nav-active': route === '/me'}">
+            </nav>
+            <nav class="footer-nav-content-item" :class="{'nav-active': route === '/me'}">
                 <router-link to="me">
                     <div class="nav-icon">
                         <img v-show="route !== '/me'" src="../assets/images/eno.svg" alt="">
@@ -27,7 +27,7 @@
                     </div>
                     <div class="nav-text">我的</div>
                 </router-link>
-            </div>
+            </nav>
         </div>
     </div>
 </template>
@@ -65,7 +65,7 @@
                 flex: 1;
                 justify-content: center;
             }
-            .router-link-active {
+            .router-link-exact-active {
                 color: #ff4d64;
             }
             .nav-icon {

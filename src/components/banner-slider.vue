@@ -72,5 +72,12 @@
                 background-size: 40px;
             }
         }
+        .swiper-pagination-bullet {
+            background: #e5e8e8;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background: #ff5733;
+        }
     }
 </style>
